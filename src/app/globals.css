@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-950: #020617;
+  --color-netflix-dark: rgb(20, 20, 20);
+  --color-netflix-blue: rgba(0, 204, 255, 0.4);
+  --color-netflix-blue-100: rgb(0, 204, 255);
+}
+
+@utility scrollbar-thin {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #020617;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 9999px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+}
+
+/* Fallback for global styles */
+body {
+  background-color: var(--color-slate-950);
+  color: #f1f5f9;
+}
+
+/* Global Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-netflix-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+  border: 2px solid var(--color-netflix-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-netflix-blue-100);
+}
